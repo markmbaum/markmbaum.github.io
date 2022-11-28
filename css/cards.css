@@ -12,13 +12,13 @@
     margin-top: 0.4cm;
     margin-bottom: 0.4cm;
     padding: 0.25cm;
-    border-color: #5C6370;
+    border-color: #ABB2BF;
     text-decoration: none;
 }
 
 .card:visited {
-    color: #828997;
-    border-color: #828997;
+    color: #ABB2BF;
+    border-color: #ABB2BF;
 }
 
 .card:hover {
