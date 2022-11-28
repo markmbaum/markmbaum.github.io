@@ -1,0 +1,40 @@
+#edu-right {
+    font-family: 'Roboto';
+}
+
+#edu-right img {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+#advisor-error {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: #E06C75;
+}
+
+#edu-degrees {
+    margin-top: 0.3cm;
+}
+
+.degree {
+    max-width: 12cm;
+    text-align: center;
+    margin: 0.25cm auto;
+    list-style: none;
+    font-family: 'Roboto Slab';
+}
+
+.degree h4 {
+    font-size: larger;
+}
+
+.degree h6 {
+    padding-left: 0cm;
+}
+
+.degree p {
+    padding-left: 0.5cm;
+    font-family: 'Roboto';
+}

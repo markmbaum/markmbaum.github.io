@@ -1,0 +1,52 @@
+.card-row {
+    padding: 0.25cm 0.25cm;
+}
+
+.card-break {
+    margin-top: 0.75cm;
+}
+
+.card {
+    background-color: inherit;
+    color: inherit;
+    margin-top: 0.4cm;
+    margin-bottom: 0.4cm;
+    padding: 0.25cm;
+    border-color: #5C6370;
+    text-decoration: none;
+}
+
+.card:visited {
+    color: #828997;
+    border-color: #828997;
+}
+
+.card:hover {
+    color: #ABB2BF;
+    border-color: #ABB2BF;
+}
+
+.card-title {
+    margin-bottom: 0.2cm;
+    text-align: left;
+}
+
+.card-body {
+    padding: 0;
+    margin: 0;
+    font-size: smaller;
+    text-align: left;
+}
+
+.card-text {
+    display: inline-block;
+}
+
+img.icon {
+    max-height: 1cm;
+    max-width: 1cm;
+}
+
+img.badg {
+    margin-left: 0.2cm;
+}
