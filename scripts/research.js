@@ -30,7 +30,7 @@ earth_papers = map(
 )
 
 for citation in chain(mars_papers, earth_papers):
-    pubs.append_citation(citation)
+    pubs.append(citation)
 
 pubs.sort(
     by=[

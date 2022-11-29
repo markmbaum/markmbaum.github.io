@@ -1,8 +1,14 @@
+html {
+    height: 100%;
+}
+
 body {
     background-color: #20242C;
     color: #ABB2BF;
     text-align: center;
     font-family: monospace;
+    padding-bottom: 0.5cm;
+    min-height: 100%;
 }
 
 #name {

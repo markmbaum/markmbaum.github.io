@@ -10,22 +10,18 @@ function selectTime(char) {
     t = 0;
     if (char == "\n") {
         t += randomInterval(100);
-        if (bernoulli(0.015)) t += 500;
+        if (bernoulli(0.02)) t += 1000;
     } else if (char == " ") {
-        t += randomInterval(70);
-        if (bernoulli(0.015)) t += 150;
+        t += randomInterval(50);
+        if (bernoulli(0.02)) t += 250;
     } else {
-        t += randomInterval(10);
+        t += randomInterval(20);
     }
     return(t);
 }
 
 function highlightPython (s) {
     return hljs.highlight(s, {language: "python"}).value;
-}
-
-function highlightCpp (s) {
-    return hljs.highlight(s, {language: "c++"}).value;
 }
 
 function highlightJulia (s) {
@@ -70,20 +66,20 @@ function scriptColumns (button, script, right, left, text, highlighter, label, e
             highlighter,
             function () {
                 setTimeout(
-                    function () { left.hide(250); },
-                    3000
-                );
-                setTimeout(
                     function () { right.slideDown(500) },
                     250
                 );
                 setTimeout(
-                    function () { right.animate({width: "100%"}, 250) },
-                    3000
+                    function () { stripExtension(label.children[0]) },
+                    250
                 );
                 setTimeout(
-                    function () { stripExtension(label.children[0]) },
-                    3000
+                    function () { left.hide(500); },
+                    10000
+                );
+                setTimeout(
+                    function () { right.animate({width: "100%"}, 500) },
+                    10000
                 );
                 endFunc();
             }
