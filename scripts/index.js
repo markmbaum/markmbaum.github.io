@@ -15,7 +15,7 @@ function selectTime(char) {
         t += randomInterval(50);
         if (bernoulli(0.02)) t += 250;
     } else {
-        t += randomInterval(20);
+        t += randomInterval(15);
     }
     return(t);
 }
