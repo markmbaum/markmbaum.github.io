@@ -1,4 +1,3 @@
-arch/
-papers/
-
+.DS_Store
 *.zip
+arch/

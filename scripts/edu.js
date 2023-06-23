@@ -5,7 +5,7 @@ using Harvard
 mark = EDU.Student(
     "Mark Baum",
     home_town="Kansas City",
-    social_security="•••-••-6552"
+    social_security="•••-••-6552" # ???
 )
 
 # undergrad
