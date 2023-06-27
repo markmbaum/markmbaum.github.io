@@ -27,14 +27,17 @@
 }
 
 .card-title {
-    margin-bottom: 0.2cm;
+    margin-bottom: 0.15cm;
     text-align: left;
+    font-size: 1.2em;
 }
 
 .card-body {
-    padding: 0;
+    padding: 0.05cm;
     margin: 0;
     font-size: smaller;
+    font-family: 'Roboto';
+    font-size: 0.9em;
     text-align: left;
 }
 
@@ -48,5 +51,5 @@ img.icon {
 }
 
 img.badg {
-    margin-left: 0.2cm;
+    margin-left: 0.25cm;
 }

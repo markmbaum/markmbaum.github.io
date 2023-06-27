@@ -6,7 +6,8 @@ body {
     background-color: #20242C;
     color: #ABB2BF;
     text-align: center;
-    font-family: monospace;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 300;
     padding-bottom: 0.5cm;
     min-height: 100%;
 }
@@ -15,6 +16,7 @@ body {
     text-align: center;
     padding-top: 1cm;
     padding-bottom: 1cm;
+    font-size: 3em;
     margin: 0 auto;
 }
 
@@ -25,9 +27,11 @@ body {
 
 .accordion-button h4 {
     margin: 0;
+    font-size: 2em;
+    font-weight: 300;
 }
 
-.accordion-button:not(.collapse) { 
+.accordion-button:not(.collapse) {
     background-color: #282C34;
     color: #ABB2BF;
 }
@@ -53,6 +57,7 @@ pre {
 }
 
 code {
-    font-family: monospace;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 300;
     color: #ABB2BF;
 }
