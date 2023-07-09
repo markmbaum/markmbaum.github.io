@@ -1,0 +1,48 @@
+body {
+    font-family: "Roboto Slab";
+}
+
+#post-header {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2.5em;
+    padding: 1cm 0;
+}
+
+#post-box {
+    max-width: 20cm;
+    margin: 0 auto;
+    padding-right: 1cm;
+}
+
+.post {
+    margin-bottom: 0.5cm;
+}
+
+.post a {
+    text-decoration: none;
+    color: #ABB2BF;
+}
+
+.post a:hover {
+    color: #ABB2BF;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+}
+
+ol li::marker {
+    color: #828997;
+}
+
+.post ul {
+    list-style: none;
+    padding: 0;
+}
+
+.post-title {
+    font-size: 1.25em;
+}
+
+.post-subtitle {
+    font-size: 1em;
+    color: #828997;
+}
