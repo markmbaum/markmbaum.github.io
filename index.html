@@ -27,15 +27,6 @@
   <link rel="stylesheet" href="css/cards.css">
   <link rel="stylesheet" href="css/footer.css">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQZ9WF88EQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-XQZ9WF88EQ');
-  </script>
 </head>
 
 <body>
@@ -175,6 +166,21 @@
 
                 <div class="citation">
                   <div class="row">
+                    <!--https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020JE006397-->
+                    <a href="papers/baum_equations_2019.pdf" target="_blank">
+                      <ul>
+                        <li class="author"><b>Mark Baum</b></li>
+                        <li class="title">Equations for Long-Range Groundwater Flow and Water Table Evolution</li>
+                        <li class="journal">arXiv (2019, uploaded 2022)</li>
+                      </ul>
+                    </a>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="citation">
+                  <div class="row">
                     <!--https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2017JD027539-->
                     <a href="papers/winsky_ice_2018.pdf" target="_blank">
                       <ul>
@@ -206,14 +212,15 @@
         <div class="accordion-body">
           <div class="container-fluid">
 
-            <div class="row card-row">
+            <div class="row card-row" id="code-body">
 
               <div class="col-md">
 
                 <a class="card" href="https://markmbaum.github.io/orthopoly/" target="_blank">
                   <div class="card-title">
-                    <img class="icon" src="img/icons/python_icon.svg">
-                    <span class="card-text">orthopoly</span><img class="badg" src="https://pepy.tech/badge/orthopoly">
+                    <img class="icon" src="img/icons/seti/python.svg">
+                    <span class="card-text">orthopoly</span>
+                    <img class="badg" src="https://static.pepy.tech/badge/orthopoly">
                   </div>
                   <div class="card-body card-text">
                     Packaged Chebyshev polynomials and real spherical harmonics for approximation, interpolation, boundary value problems, etc.
@@ -224,8 +231,9 @@
 
                 <a class="card" href="https://markmbaum.github.io/BasicInterpolators.jl/dev/" target="_blank">
                   <div class="card-title">
-                    <img class="icon" src="img/icons/julia_icon.svg">
-                    <span class="card-text">BasicInterpolators.jl</span><img class="badg" src="https://shields.io/endpoint?url=https://pkgs.genieframework.com/api/v1/badge/BasicInterpolators&label=downloads&logo=%22%22">
+                    <img class="icon" src="img/icons/seti/julia.svg">
+                    <span class="card-text">BasicInterpolators.jl</span>
+                    <img class="badg" src="https://shields.io/endpoint?url=https://pkgs.genieframework.com/api/v1/badge/BasicInterpolators&label=downloads&logo=%22%22">
                   </div>
                   <div class="card-body card-text">
                     A more straightforward interface for common interpolation routines.
@@ -236,11 +244,47 @@
 
                 <a class="card" href="https://github.com/markmbaum/Richards" target="_blank">
                   <div class="card-title">
-                    <img class="icon" src="img/icons/cpp_icon.svg">
+                    <img class="icon" src="img/icons/seti/cpp.svg">
                     <span class="card-text">Richards</span>
                   </div>
                   <div class="card-body card-text">
-                    A class and drivers for solving the one-dimensional Richard's equation with finite-volume discretization under a range of conditions.
+                    Numerics for solving the one-dimensional Richard's equation with finite-volume discretization under a range of conditions.
+                  </div>
+                </a>
+
+                <div class="card-break"></div>
+
+                <a class="card" href="https://github.com/markmbaum/Faddeyeva985.jl" target="_blank">
+                  <div class="card-title">
+                    <img class="icon" src="img/icons/seti/julia.svg">
+                    <span class="card-text">Faddeyeva985.jl</span>
+                  </div>
+                  <div class="card-body card-text">
+                    Julia implementation of Algorithm 985: a fast, moderate-accuracy approximation of the Faddeyeva (Faddeeva) function
+                  </div>
+                </a>
+
+                <div class="card-break"></div>
+
+                <a class="card" href="https://github.com/markmbaum/emf" target="_blank">
+                  <div class="card-title">
+                    <img class="icon" src="img/icons/seti/python.svg">
+                    <span class="card-text">emf</span>
+                  </div>
+                  <div class="card-body card-text">
+                    Tools for modeling electric and magnetic fields (EMF) near power lines, in two and three dimensions
+                  </div>
+                </a>
+
+                <div class="card-break"></div>
+
+                <a class="card" href="https://github.com/markmbaum/ScalarRadau.jl" target="_blank">
+                  <div class="card-title">
+                    <img class="icon" src="img/icons/seti/julia.svg">
+                    <span class="card-text">ScalarRadau.jl</span>
+                  </div>
+                  <div class="card-body card-text">
+                    The famous 5th order Radau IIA method, tailored for a scalar ODE that requires excellent solver stability
                   </div>
                 </a>
 
@@ -250,11 +294,11 @@
 
                 <a class="card" href="https://markmbaum.github.io/libode/" target="_blank">
                   <div class="card-title">
-                    <img class="icon" src="img/icons/cpp_icon.svg">
+                    <img class="icon" src="img/icons/seti/cpp.svg">
                     <span class="card-text">libode</span>
                   </div>
                   <div class="card-body card-text">
-                    A suite of customizable, high-order, single-step ODE integrators for parallel ensemble simulations.
+                    A modular collection of customizable, high-order, single-step ODE integrators for parallel ensemble simulations.
                   </div>
                 </a>
 
@@ -262,7 +306,7 @@
 
                 <a class="card" href="https://github.com/markmbaum/GEOCLIM.jl" target="_blank">
                   <div class="card-title">
-                    <img class="icon" src="img/icons/julia_icon.svg">
+                    <img class="icon" src="img/icons/seti/julia.svg">
                     <span class="card-text">GEOCLIM.jl</span>
                   </div>
                   <div class="card-body card-text">
@@ -274,7 +318,7 @@
 
                 <a class="card" href="https://github.com/markmbaum/Griddle.jl" target="_blank">
                   <div class="card-title">
-                    <img class="icon" src="img/icons/julia_icon.svg">
+                    <img class="icon" src="img/icons/seti/julia.svg">
                     <span class="card-text">Griddle.jl</span>
                   </div>
                   <div class="card-body card-text">
@@ -282,17 +326,41 @@
                   </div>
                 </a>
 
-                <!--<div class="card-break"></div>
+                <div class="card-break"></div>
 
                 <a class="card" href="https://github.com/markmbaum/odpydoc" target="_blank">
                   <div class="card-title">
-                    <img class="icon" src="img/icons/python_icon.svg">
+                    <img class="icon" src="img/icons/seti/python.svg">
                     <span class="card-text">odpydoc</span>
                   </div>
                   <div class="card-body card-text">
-                    A simple automatic documentation generator for small Python packages, producing static sites styled after Atom's One Dark theme.
+                    A very lightweight automatic documentation generator (with a CLI) for small Python packages, producing static sites styled after the One Dark theme.
                   </div>
-                </a>-->
+                </a>
+
+                <div class="card-break"></div>
+
+                <a class="card" href="https://github.com/markmbaum/simple-spectral-PDEs" target="_blank">
+                  <div class="card-title">
+                    <img class="icon" src="img/icons/seti/julia.svg">
+                    <span class="card-text">simple-spectral-PDEs</span>
+                  </div>
+                  <div class="card-body card-text">
+                    Extremely accurate pseudospectral solvers for smooth one-dimensional partial differential equations.
+                  </div>
+                </a>
+
+                <div class="card-break"></div>
+
+                <a class="card" href="https://github.com/markmbaum/crustal-heat" target="_blank">
+                  <div class="card-title">
+                    <img class="icon" src="img/icons/seti/cpp.svg">
+                    <span class="card-text">crustal-heat</span>
+                  </div>
+                  <div class="card-body card-text">
+                    Numerics for the one-dimensional heat equation applied to a planet's crust.
+                  </div>
+                </a>
 
               </div>
 
@@ -379,7 +447,7 @@
 
                 <a class="card" href="https://markmbaum.github.io/segmented-ensemble-weathering/" target="_blank">
                   <div class="card-title">
-                    <img class="icon" src="img/icons/julia_icon.svg"><img class="icon" src="img/icons/python_icon.svg"><img class="icon" src="img/icons/sklearn_icon.png">
+                    <img class="icon" src="img/icons/seti/julia.svg"><img class="icon" src="img/icons/seti/python.svg"><img class="icon" src="img/icons/sklearn.png">
                     <span class="card-text">Continents & Climate</span>
                   </div>
                   <div class="card-body card-text">
@@ -391,7 +459,7 @@
 
                 <a class="card" href="https://github.com/markmbaum/xft" target="_blank">
                   <div class="card-title">
-                    <img class="icon" src="img/icons/julia_icon.svg"><img class="icon" src="img/icons/python_icon.svg"><img class="icon" src="img/icons/bokeh_icon.svg">
+                    <img class="icon" src="img/icons/seti/julia.svg"><img class="icon" src="img/icons/seti/python.svg"><img class="icon" src="img/icons/bokeh.svg">
                     <span class="card-text">The Height of Fitness</span>
                   </div>
                   <div class="card-body card-text">
@@ -403,7 +471,7 @@
 
                 <a class="card" href="https://nbviewer.org/github/markmbaum/hirise-thumbnails/blob/main/hirise_thumbnails_modeling.ipynb" target="_blank">
                   <div class="card-title">
-                    <img class="icon" src="img/icons/python_icon.svg"><img class="icon" src="img/icons/tensorflow_icon.png">
+                    <img class="icon" src="img/icons/seti/python.svg"><img class="icon" src="img/icons/tensorflow.png">
                     <span class="card-text">Deep Martian Sundial</span>
                   </div>
                   <div class="card-body card-text">
@@ -415,7 +483,7 @@
 
                 <a class="card" href="http://whereistheweather.us/" target="_blank">
                   <div class="card-title">
-                    <img class="icon" src="img/icons/python_icon.svg"><img class="icon" src="img/icons/dash_icon.png">
+                    <img class="icon" src="img/icons/seti/python.svg"><img class="icon" src="img/icons/dash.png">
                     <span class="card-text">Find Your Weather</span>
                   </div>
                   <div class="card-body card-text">
@@ -430,7 +498,7 @@
 
                 <a class="card" href="https://nbviewer.org/github/markmbaum/cyclone-detection/blob/main/test_cyclone_detector.ipynb" target="_blank">
                   <div class="card-title">
-                    <img class="icon" src="img/icons/python_icon.svg"><img class="icon" src="img/icons/tensorflow_icon.png">
+                    <img class="icon" src="img/icons/seti/python.svg"><img class="icon" src="img/icons/tensorflow.png">
                     <span class="card-text">Cyclone Detection</span>
                   </div>
                   <div class="card-body card-text">
@@ -442,7 +510,7 @@
 
                 <a class="card" href="https://nbviewer.org/github/markmbaum/alpine-weather-prediction/blob/main/alpine_weather_prediction.ipynb" target="_blank">
                   <div class="card-title">
-                    <img class="icon" src="img/icons/python_icon.svg"><img class="icon" src="img/icons/tensorflow_icon.png">
+                    <img class="icon" src="img/icons/seti/python.svg"><img class="icon" src="img/icons/tensorflow.png">
                     <span class="card-text">Alpine Weather Forecasting</span>
                   </div>
                   <div class="card-body card-text">
@@ -454,7 +522,7 @@
 
                 <a class="card" href="https://colab.research.google.com/drive/1jt4ZndYq77SsMl5RAvvOi5gZF-yj5C5n?usp=sharing" target="_blank">
                   <div class="card-title">
-                    <img class="icon" src="img/icons/python_icon.svg"><img class="icon" src="img/icons/jax_icon.png">
+                    <img class="icon" src="img/icons/seti/python.svg"><img class="icon" src="img/icons/jax.png">
                     <span class="card-text">Learning PDEs on GPU</span>
                   </div>
                   <div class="card-body card-text">
@@ -482,7 +550,7 @@
       <div class="col">
         <a href="https://github.com/markmbaum" target="_blank">
           <div href="#" data-bs-toggle="tooltip" data-bs-title="GitHub">
-            <img src="img/icons/github_icon.png">
+            <img src="img/icons/github.png">
           </div>
         </a>
       </div>
@@ -490,15 +558,7 @@
       <div class="col">
         <a href="mailto:markmbaum@protonmail.com">
           <div href="#" data-bs-toggle="tooltip" data-bs-title="markmbaum@pm.me">
-            <img src="img/icons/email_icon.png">
-          </div>
-        </a>
-      </div>
-
-      <div class="col">
-        <a href="https://scholar.google.com/citations?user=ZzkqMsUAAAAJ&hl=en" target="_blank">
-          <div href="#" data-bs-toggle="tooltip" data-bs-title="Google Scholar">
-            <img src="img/icons/google_scholar_icon.png">
+            <img src="img/icons/email.png">
           </div>
         </a>
       </div>
@@ -506,14 +566,14 @@
       <div class="col">
         <a href="https://www.linkedin.com/in/mark-baum/" target="_blank">
           <div href="#" data-bs-toggle="tooltip" data-bs-title="LinkedIn">
-            <img src="img/icons/linkedin_icon.png">
+            <img src="img/icons/linkedin.png">
           </div>
         </a>
       </div>
 
     </div>
 
-    <p>powered by: <i>me</i></p>
+    <p style="opacity: 0.4;">powered by: <i>mark</i></p>
 
   </div>
 
