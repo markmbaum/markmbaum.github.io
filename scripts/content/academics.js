@@ -1,4 +1,4 @@
-var research_text = `from academia import PublicationList
+var academics_text = `from academia import PublicationList
 from DOI.api import fetch_citation
 from itertools import chain
 
