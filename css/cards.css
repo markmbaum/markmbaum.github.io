@@ -1,59 +1,59 @@
 .card-row {
-    padding: 0.25cm 0.25cm;
+  padding: 0.25cm 0.25cm;
 }
 
 .card-break {
-    margin-top: 0.75cm;
+  margin-top: 0.75cm;
 }
 
 .card {
-    background-color: inherit;
-    color: inherit;
-    margin-top: 0.4cm;
-    margin-bottom: 0.4cm;
-    padding: 0.25cm;
-    border-color: #ABB2BF;
-    text-decoration: none;
+  background-color: inherit;
+  color: inherit;
+  margin-top: 0.4cm;
+  margin-bottom: 0.4cm;
+  padding: 0.25cm;
+  border-color: #ABB2BF;
+  text-decoration: none;
 }
 
 .card:visited {
-    color: #ABB2BF;
-    border-color: #ABB2BF;
+  color: #ABB2BF;
+  border-color: #64779b;
 }
 
 .card:hover {
-    color: #ABB2BF;
-    border-color: #ABB2BF;
+  color: #ABB2BF;
+  border-color: #ABB2BF;
 }
 
 .card-title {
-    margin-bottom: 0.15cm;
-    font-size: 1.2em;
-    display: inline-block;
-    text-align: left;
+  margin-bottom: 0.15cm;
+  font-size: 1.2em;
+  display: inline-block;
+  text-align: left;
 }
 
 .card-body {
-    padding: 0.05cm;
-    margin: 0;
-    font-size: smaller;
-    font-family: 'Roboto';
-    font-size: 0.9em;
-    align-items: left;
-    text-align: left;
+  padding: 0.05cm;
+  margin: 0;
+  font-size: smaller;
+  font-family: 'Roboto';
+  font-size: 0.9em;
+  align-items: left;
+  text-align: left;
 }
 
 .card-text {
-    display: inline-block;
+  display: inline-block;
 }
 
 img.icon {
-    max-height: 0.9cm;
-    max-width: 0.9cm;
-    opacity: 0.9;
-    margin-left: 0.2cm;
+  max-height: 0.9cm;
+  max-width: 0.9cm;
+  opacity: 0.9;
+  margin-left: 0.2cm;
 }
 
 img.badg {
-    padding-left: 0.2cm;
+  padding-left: 0.2cm;
 }
