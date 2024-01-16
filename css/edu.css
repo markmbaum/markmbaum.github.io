@@ -21,7 +21,7 @@
 .degree {
   max-width: 12cm;
   text-align: center;
-  margin: 0.25cm auto;
+  margin: 0.25cm auto 0.4cm auto;
   list-style: none;
   font-family: 'Roboto Slab';
 }
@@ -37,4 +37,12 @@
 .degree p {
   padding-left: 0.5cm;
   font-family: 'Roboto';
+  margin: 0;
+}
+
+img.uni {
+  max-height: 3cm;
+  max-width: 3cm;
+  opacity: 0.7;
+  padding-bottom: 0.25cm;
 }

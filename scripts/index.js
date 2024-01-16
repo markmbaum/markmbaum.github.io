@@ -14,16 +14,16 @@ $(".card").hover(
     }
     );
 
-    // add the typewriter animation sequence to the "academics" block
+    // add the typewriter animation sequence to the "research" block
     scriptColumns(
-        $("#academics-button"),
-        document.getElementById("academics-script"),
-        $("#academics-right"),
-        $("#academics-left"),
-        academics_text,
+        $("#research-button"),
+        document.getElementById("research-script"),
+        $("#research-right"),
+        $("#research-left"),
+        research_text,
         highlightPython,
-        document.getElementById('academics-button'),
-        $("#academics-fast-forward")
+        document.getElementById('research-button'),
+        $("#research-fast-forward")
         )
 
         // add the typewriter animation sequence to the "edu" block
