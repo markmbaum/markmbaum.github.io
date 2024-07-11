@@ -22,7 +22,7 @@
 
   <!--my local stylesheets-->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/academics.css">
+  <link rel="stylesheet" href="css/research.css">
   <link rel="stylesheet" href="css/edu.css">
   <link rel="stylesheet" href="css/cards.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -39,25 +39,40 @@
 
     <div class="accordion-item">
 
-      <div class="accordion-header" id="headingAcademics">
-        <button id="academics-button" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademics" aria-expanded="false" aria-controls="collapseAcademics">
-          <h4>academics.py</h4>
+      <div class="accordion-header" id="headingResearch">
+        <button id="research-button" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResearch" aria-expanded="false" aria-controls="collapseResearch">
+          <h4>research.py</h4>
         </button>
       </div>
 
-      <div id="collapseAcademics" class="accordion-collapse collapse" aria-labelledby="headingAcademics" data-bs-parent="#accordionExample">
+      <div id="collapseResearch" class="accordion-collapse collapse" aria-labelledby="headingResearch" data-bs-parent="#accordionExample">
         <div class="accordion-body">
           <div class="container-fluid">
             <div class="row">
 
-              <div id="academics-left" class="col-md-6 left-column">
-                <a id="academics-fast-forward" class="fast-forward">
+              <div id="research-left" class="col-md-6 left-column">
+                <a id="research-fast-forward" class="fast-forward">
                   <img src="img/icons/fast_forward.png">
                 </a>
-                <pre><code id="academics-script"></code></pre>
+                <pre><code id="research-script"></code></pre>
               </div>
 
-              <div id="academics-right" class="col-md-6 right-column">
+              <div id="research-right" class="col-md-6 right-column">
+
+                <div class="citation">
+                  <div class="row">
+                    <!--https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022GC010611-->
+                    <a href="papers/baum_mass_balance_MRV.pdf" target="_blank">
+                      <ul>
+                        <li class="author"><b>Mark Baum</b> & Henry Liu, Lily Schacht, Jake Schneider & Mary Yap</li>
+                        <li class="title">Mass-Balance MRV for Carbon Dioxide Removal by Enhanced Rock Weathering: Methods, Simulation, and Inference</li>
+                        <li class="journal">arXiv (2024)</li>
+                      </ul>
+                    </a>
+                  </div>
+                </div>
+
+                <hr>
 
                 <div class="citation">
                   <div class="row">
@@ -304,6 +319,17 @@
 
               <div class="col-md">
 
+                <a class="card" href="https://github.com/LithosCarbon/Monty.jl" target="_blank">
+                  <div class="card-title">
+                    <img class="icon" src="img/icons/seti/julia.svg">
+                    <span class="card-text">Monty.jl</span>
+                  </div>
+                  <div class="card-body card-text">
+                    A high-performance package for simulating geochemical data produced in experiments, field trials, and commercial deployments in enhanced rock weathering (ERW).</div>
+                </a>
+
+                <div class="card-break"></div>
+
                 <a class="card" href="https://markmbaum.github.io/libode/" target="_blank">
                   <div class="card-title">
                     <img class="icon" src="img/icons/seti/cpp.svg">
@@ -372,18 +398,6 @@
                   </div>
                   <div class="card-body card-text">
                     Numerics for the one-dimensional heat equation applied to a planet's crust.
-                  </div>
-                </a>
-
-                <div class="card-break"></div>
-
-                <a class="card" target="_blank">
-                  <div class="card-title">
-                    <img class="icon" style="opacity: 50%;" src="img/icons/seti/lock.svg">
-                    <span class="card-text">▊▊▊▊▊▊▊▊▊▊</span>
-                  </div>
-                  <div class="card-body card-text">
-                    Projects in the corporate vault.
                   </div>
                 </a>
 
@@ -619,7 +633,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/cpp.min.js"></script>
 
   <!--my local scripts, content definitions first then actual code-->
-  <script src="scripts/content/academics.js"></script>
+  <script src="scripts/content/research.js"></script>
   <script src="scripts/content/edu.js"></script>
   <script src="scripts/animation.js"></script>
   <script src="scripts/index.js"></script>
