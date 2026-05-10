@@ -5,7 +5,7 @@ function randomInterval(t) {
 
 // draws true/false with probability `p`
 function bernoulli(p) {
-    return Math.random() < p ? true : false;
+    return Math.random() < p;
 }
 
 /**
@@ -15,7 +15,7 @@ function bernoulli(p) {
  * and all other characters a relatively short wait time
  */
 function selectTime(char) {
-    t = 0;
+    let t = 0;
     if (char == "\n") {
         t += randomInterval(100);
         if (bernoulli(0.02)) t += 1000;
@@ -51,31 +51,8 @@ function typeWriter(
      * recursion is stopped and final animation proceeeds
      */
     var fastforwarded = fastforward.css("visibility") == "hidden";
-    // when the animation starts, fade in the fast forward button and set up it's behavior on click
-    if (index == 0) {
-        // fade in the fast forward button slightly after the typewriter starts
-        setTimeout(
-            function () {
-                fastforward.animate({
-                    opacity: "0.75",
-                });
-            },
-            3000 // probably should be longer
-        );
-        // when fast forward is clicked, trigger several changes
-        fastforward.one("click", function () {
-            // change the icon to a checkmark
-            fastforward.children().attr("src", "img/icons/checkmark.png");
-            var fadespeed = 500;
-            // fade the button out then
-            fastforward.fadeOut(fadespeed);
-            setTimeout(function () {
-                fastforward.css("visibility", "hidden");
-            }, fadespeed);
-        });
-    }
     // the content isn't fully printed yet, recursively add characters
-    if ((index <= content.length) & !fastforwarded) {
+    if (index < content.length && !fastforwarded) {
         // get the next character
         var char = content.charAt(index);
         // only trigger syntax highlighting after individual words are fully typed
@@ -110,8 +87,9 @@ function typeWriter(
 
 // removes the extension from a file name string
 function stripExtension(element) {
-    html = element.innerHTML;
-    idx = html.indexOf(".");
+    const html = element.innerHTML;
+    const idx = html.indexOf(".");
+    if (idx < 0) return;
     element.innerHTML = html.slice(0, idx) + "/";
 }
 
@@ -128,6 +106,19 @@ function scriptColumns(
     endFunc = function () {}
 ) {
     button.one("click", function () {
+        // fade in the fast forward button slightly after the typewriter starts
+        setTimeout(function () {
+            fastforward.animate({ opacity: "0.75" });
+        }, 3000);
+        // when fast forward is clicked, swap the icon to a checkmark and fade out
+        fastforward.one("click", function () {
+            fastforward.children().attr("src", "img/icons/checkmark.png");
+            var fadespeed = 500;
+            fastforward.fadeOut(fadespeed);
+            setTimeout(function () {
+                fastforward.css("visibility", "hidden");
+            }, fadespeed);
+        });
         typeWriter(script, text, highlighter, fastforward, function () {
             setTimeout(function () {
                 right.slideDown(500);
